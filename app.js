@@ -90,7 +90,6 @@ app
         res.render('rifas');
     });
 //server
-var port = process.env.PORT || 8080
-app.listen(port, function() {
+require('http').createServer(app).listen(process.env.PORT || 8080, function() {
     console.log('Server running!');
 });
