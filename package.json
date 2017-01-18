@@ -1,0 +1,19 @@
+{
+  "name": "rifa-facil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonatan Souza",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "moment": "^2.17.1",
+    "shortid": "^2.2.6"
+  }
+}

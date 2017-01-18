@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 1mm 1mm 1mm 1mm;
+}
+
+table {
+    border: 3px solid black;
+}
+
+.custom-bottom {
+    border-bottom: 3px solid black;
+}
+
+.custom-side-border {
+    border-right: 3px solid black !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.custom-transparent-border-top {
+    border-top: none !important;
+}
+
+.custom-transparent-border-bottom {
+    border-bottom: none !important;
+}
+
+.capsule {
+    margin-top: 20px;
+}
+.fix-margin{
+  margin-top: 300px;
+}

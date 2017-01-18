@@ -1,0 +1,20 @@
+<div class="container">
+    <h3 class="page-header text-center">Rifas Disponíveis</h3>
+    <div class="form-group">
+        <input type="text" ng-model="searchList" class="form-control" placeholder="Procurar rifas">
+    </div>
+    <div ng-repeat="rifa in rifas| filter:searchList">
+        <h4 class="page-header">Bloqueto <span class="pull-right">{{rifa.name}} ({{rifa._id}})</span></h4>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading text-center">{{rifa.title}}</div>
+            <ul class="list-group">
+                <li class="list-group-item"><b>Mensagem: </b> {{rifa.msg}}</li>
+                <li class="list-group-item"><b>Preço: </b> R$ {{rifa.price}}</li>
+                <li class="list-group-item"><b>Quantidade: </b>{{rifa.qtd}} unidades</li>
+                <li class="list-group-item"><b>Data: </b>{{rifa.date}}</li>
+            </ul>
+            <div class="panel-footer"><button ng-click="getTemplate(rifa._id)" class="btn btn-success btn-block">Utilizar</button></div>
+        </div>
+    </div>
+</div>

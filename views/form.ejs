@@ -1,0 +1,38 @@
+<% include layout/header.ejs %>
+    <div class="container">
+        <h1 class="text-center">Rifa Fácil</h1>
+        <h3 class="text-center">Preencha todos os campos abaixo</h3>
+        <form method="post" action="/rifa">
+
+            <h4 class="page-header">Descrição</h4>
+            <div class="form-group">
+                <label for="target">Nome para a Rifa</label>
+                <input type="text" class="form-control" name="name" id="target" required>
+            </div>
+            <h4 class="page-header">Bloqueto</h4>
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" class="form-control" name="title" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="msg">Mensagem</label>
+                <textarea type="text" class="form-control" name="msg" id="msg" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Preço</label>
+                <input type="number min=" 1 " step="any "" class="form-control" name="price" id="price" required>
+            </div>
+            <div class="form-group">
+                <label for="qtd">Quantidade</label>
+                <input type="number" class="form-control" name="qtd" id="qtd" required>
+            </div>
+            <h4 class="page-header">Armazenar</h4>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="template"> Salvar como template
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: 20px">Enviar</button>
+        </form>
+    </div>
+    <% include layout/footer.ejs %>
