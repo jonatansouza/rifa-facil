@@ -1,4 +1,5 @@
 var express = require('express'),
+    http = require('http'),
     app = express(),
     bodyParser = require('body-parser'),
     fs = require('fs'),
@@ -90,6 +91,9 @@ app
         res.render('rifas');
     });
 //server
-require('http').createServer(app).listen(process.env.PORT || 8080, function() {
+var port = process.env.PORT || 8080;
+var addr = process.env.ADDR || '0.0.0.0';
+
+http.createServer(app).listen(port, addr, function() {
     console.log('Server running!');
 });
