@@ -1,68 +1,68 @@
 <% include layout/header.ejs %>
-<div class="container">
-    <% var count = 0; %>
-        <% var limit = (parseInt(total)+1);
+    <div class="container">
+        <% var count = 0; %>
+            <% var limit = (parseInt(total)+1);
           for(var i=1; i < limit; i++) {
             if(count == 6){
             %>
-            <div class="fix-margin">
+                <div class="fix-margin">
 
-            </div>
-            <%
+                </div>
+                <%
               count = 0
             }
            %>
-                <div class="capsule">
+                    <div class="capsule">
 
-                    <table>
-                        <tr class="custom-bottom">
-                            <th class="col-xs-2 text-center custom-side-border">
-                                <% if(i < 10){ %>
-                                    <h3>Nº 00<%= i %></h3></th>
-                            <% } %>
-                                <% if(i >= 10 && i < 100){ %>
-                                    <h3>Nº 0<%= i %></h3></th>
-                                    <% } %>
-                                        <% if(i >= 100){ %>
-                                            <h3>Nº <%= i %></h3></th>
-                                            <% } %>
-                                                <th class="col-xs-10 text-center">
-                                                  <h3>Nº 00<%= i %></h3></th>
-                                                    <% if(i < 10){ %>
+                        <table>
+                            <tr class="custom-bottom">
+                                <th class="col-xs-2 text-center custom-side-border">
+                                    <% if(i < 10){ %>
+                                        <h3>Nº 00<%= i %></h3></th>
+                                <% } %>
+                                    <% if(i >= 10 && i < 100){ %>
+                                        <h3>Nº 0<%= i %></h3></th>
+                                        <% } %>
+                                            <% if(i >= 100){ %>
+                                                <h3>Nº <%= i %></h3></th>
                                                 <% } %>
-                                                    <% if(i > 10 && i < 100){ %>
-                                                        <h3>Nº 0<%= i %></h3></th>
-                                                        <% } %>
-                                                            <% if(i > 100){ %>
-                                                                <h3>Nº <%= i %></h3></th>
-                                                                <% } %>
-                                                                    </th>
-                        </tr>
-                        <tr>
-                            <td class="custom-side-border">
-                                <p class="text-center">
-                                    <strong>Nome</strong>
-                                </p>
-                                <p>
-                                    ____________________________________________
-                                </p>
-                            </td>
-                            <td class="custom-transparent-border-bottom">
-                                <h4 class="text-center"><strong>AÇÃO ENTRE AMIGOS</strong></h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="custom-side-border">
-                                <p class="text-center">
-                                    <strong>Telefone</strong>
-                                </p>
-                                <p>
-                                    ____________________________________________
-                                </p>
+                                                    <th class="col-xs-10 text-center">
+                                                        <% if(i < 10){ %>
+                                                            <h3>Nº 00<%= i %></h3></th>
+                                                    <% } %>
+                                                        <% if(i >= 10 && i < 100){ %>
+                                                            <h3>Nº 0<%= i %></h3></th>
+                                                            <% } %>
+                                                                <% if(i >= 100){ %>
+                                                                    <h3>Nº <%= i %></h3></th>
+                                                                    <% } %>
 
-                            </td>
-                            <td class="custom-transparent-border-top">
-                                <span class="text-center">
+                            </tr>
+                            <tr>
+                                <td class="custom-side-border">
+                                    <p class="text-center">
+                                        <strong>Nome</strong>
+                                    </p>
+                                    <p>
+                                        ____________________________________________
+                                    </p>
+                                </td>
+                                <td class="custom-transparent-border-bottom">
+                                    <h4 class="text-center"><strong>AÇÃO ENTRE AMIGOS</strong></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="custom-side-border">
+                                    <p class="text-center">
+                                        <strong>Telefone</strong>
+                                    </p>
+                                    <p>
+                                        ____________________________________________
+                                    </p>
+
+                                </td>
+                                <td class="custom-transparent-border-top">
+                                    <span class="text-center">
                             <p>
                                 Rifa-se um kit Perfumaria Natura Masculino OU Feminino.
                             <br>
@@ -74,17 +74,17 @@
                               5,00</strong>
                             </p>
                             </span>
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
 
-                    </table>
+                        </table>
 
-                </div>
+                    </div>
 
-                <%
+                    <%
             count = count + 1;
                       } %>
-</div>
-</body>
+    </div>
+    </body>
 
-</html>
+    </html>
