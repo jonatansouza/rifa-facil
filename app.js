@@ -69,8 +69,8 @@ app
             }
         });
         if (rifa == null) {
-            res.status(404).json({
-                error: "rifa nao encontrada"
+            res.render('error', {
+                msg: "Rifa não encontrada"
             });
         } else {
             res.render('rifa', {
