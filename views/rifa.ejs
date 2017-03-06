@@ -41,12 +41,15 @@
                                     </tr>
                                     <tr>
                                         <td class="custom-side-border">
+                                          <% if(data.sideInfo){ %>
                                             <p class="text-center">
                                                 <strong>Nome</strong>
                                             </p>
                                             <p>
                                                 ____________________________________________
                                             </p>
+                                          <% } %>
+
                                         </td>
                                         <td class="custom-transparent-border-bottom">
                                             <h4 class="text-center"><strong><%= data.title %></strong></h4>
@@ -54,13 +57,14 @@
                                     </tr>
                                     <tr>
                                         <td class="custom-side-border">
+                                          <% if(data.sideInfo){ %>
                                             <p class="text-center">
                                                 <strong>Telefone</strong>
                                             </p>
                                             <p>
                                                 ____________________________________________
                                             </p>
-
+                                              <% } %>
                                         </td>
                                         <td class="custom-transparent-border-top">
                                             <span class="text-center">
